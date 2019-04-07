@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-button expand="full"  color="danger" (click)="data_function()">Gitsof.com</ion-button>
+    <div  *ngIf="google"  [@fadeInOnEnter] >
+      <h1>GitSof.com is technical  blog</h1>
+    </div>
+    <div  *ngIf="google==false"  [@fadeInOnEnter] >
+      <h3 > Welcome,  Fellow user !!!!!!!</h3>
+    </div> 
+    
+</ion-content>
